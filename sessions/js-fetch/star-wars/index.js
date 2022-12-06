@@ -30,6 +30,13 @@ const EXAMPLE_DATA = {
   url: "https://swapi.dev/api/people/1/",
 };
 
+// Query root element and renderElement function
+const root = document.querySelector("[data-js='root']");
+
+function renderElement(element) {
+  root.append(element); // Append the element to the page
+}
+
 // Create dom element for a card and append it to the root
 const firstCard = Card(EXAMPLE_DATA);
 renderElement(firstCard);
@@ -45,7 +52,7 @@ function fetchDataAndRender() {
 // --^-- your code here --^--
 
 function Card(characterData) {
-  const card = document.createElement("article"); // Create a new article Element
+  const card = document.createElement("article"); // Create a new article element
   card.classList.add("card"); // Add the class 'card'
 
   // Fill the article element with content.
@@ -65,10 +72,4 @@ function Card(characterData) {
   card.append(birthYear);
 
   return card;
-}
-
-const root = document.querySelector("[data-js='root']");
-
-function renderElement(element) {
-  root.append(element); // Append the Element to the page
 }
