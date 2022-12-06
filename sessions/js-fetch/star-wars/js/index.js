@@ -44,7 +44,7 @@ function fetchDataAndRender() {
 
 // --^-- your code here --^--
 
-export function Card(characterData) {
+function Card(characterData) {
   const card = document.createElement("article"); // Create a new article Element
   card.classList.add("card"); // Add the class 'card'
 
@@ -69,6 +69,6 @@ export function Card(characterData) {
 
 const root = document.querySelector("[data-js='root']");
 
-export function renderElement(element) {
+function renderElement(element) {
   root.append(element); // Append the Element to the page
 }
