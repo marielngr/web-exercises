@@ -33,7 +33,7 @@ export function setColorToGuess(hexCode, name) {
 export function getRandomHexCode() {
   return new Array(6)
     .fill(null)
-    .map((_entry) => Math.floor(Math.random() * 16).toString(16))
+    .map(() => Math.floor(Math.random() * 16).toString(16))
     .join("");
 }
 

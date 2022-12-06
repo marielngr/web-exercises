@@ -1,6 +1,3 @@
-import { Card } from "../components/Card/Card.js";
-import { renderElement } from "./utils.js";
-
 console.clear();
 
 const EXAMPLE_DATA = {
@@ -43,4 +40,35 @@ fetchDataAndRender();
 
 function fetchDataAndRender() {
   fetch(); // ?
+}
+
+// --^-- your code here --^--
+
+export function Card(characterData) {
+  const card = document.createElement("article"); // Create a new article Element
+  card.classList.add("card"); // Add the class 'card'
+
+  // Fill the article element with content.
+  const heading = document.createElement("h2");
+  heading.textContent = characterData.name;
+
+  card.append(heading);
+
+  const eyeColor = document.createElement("p");
+  eyeColor.textContent = `Eye color: ${characterData.eye_color}`;
+
+  card.append(eyeColor);
+
+  const birthYear = document.createElement("p");
+  birthYear.textContent = `Birth Year: ${characterData.birth_year}`;
+
+  card.append(birthYear);
+
+  return card;
+}
+
+const root = document.querySelector("[data-js='root']");
+
+export function renderElement(element) {
+  root.append(element); // Append the Element to the page
 }
