@@ -1,4 +1,3 @@
-console.clear();
 
 /*
 Complete the functions add, subtract, multiply, divide and remainder.
