@@ -15,29 +15,29 @@ test("should be 4823 if added -1020 and 5843", () => {
   expect(result).toBe(4823);
 });
 
-test("should be 0 if substrackt 1 from 1", () => {
+test("should be 0 if subtract 1 from 1", () => {
   const result = subtract(1, 1);
   expect(result).toBe(0);
 });
-test("should be -180 if substrackt 192 from 12", () => {
+test("should be -180 if subtract 192 from 12", () => {
   const result = subtract(12, 192);
   expect(result).toBe(-180);
 });
-test("should be -6863 if substrackt 5843 from -1020", () => {
+test("should be -6863 if subtract 5843 from -1020", () => {
   const result = subtract(-1020, 5843);
   expect(result).toBe(-6863);
 });
 
-test("should be 1 if myltiply 1 and 1", () => {
+test("should be 1 if multiply 1 and 1", () => {
   const result = multiply(1, 1);
   expect(result).toBe(1);
 });
 
-test("should be 2304 if myltiply 12 and 192", () => {
+test("should be 2304 if multiply 12 and 192", () => {
   const result = multiply(12, 192);
   expect(result).toBe(2304);
 });
-test("should be -5959860 if myltiply -1020 and 5843", () => {
+test("should be -5959860 if multiply -1020 and 5843", () => {
   const result = multiply(-1020, 5843);
   expect(result).toBe(-5959860);
 });
